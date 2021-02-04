@@ -27,7 +27,7 @@ export default defineComponent({
       state.loginDis = true;
       msgChild.loadingMessage("请稍等",9999); 
       loginFunc(state.un , state.psw).then(res=>{  
-      state.loginDis = false; 
+      state.loginDis = false;  
         msgChild.successMessage("登陆成功，请稍后",1.5,()=>{ 
           common.rLink("/");
         })

@@ -6,7 +6,7 @@ export default {
    },
    getters: {
       getAccess: function (state) { 
-         return state.access;
+         return localStorage.getItem("fcToken");
       }
    },
    mutations: {

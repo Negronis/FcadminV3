@@ -6,7 +6,7 @@ import store from '@/store';
  */ 
 let initGuard = (router) => {
    router.beforeEach((to, from, next) => { 
-      let { name } = to;
+      let { name } = to;  
       if (name !== "login" && name !== "403" && !store.getters.getAccess) {
          next({
             path:"/403",

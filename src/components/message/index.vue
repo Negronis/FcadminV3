@@ -46,8 +46,7 @@ export default defineComponent({
         return;
       }
       state.timer = setTimeout(() => {
-        fn && fn();
-        console.log(fn);
+        fn && fn(); 
         stateReset();
       }, duration * 1000 || 3000);
     };
