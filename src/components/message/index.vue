@@ -50,7 +50,8 @@ export default defineComponent({
         stateReset();
       }, duration * 1000 || 3000);
     };
-    let hideModel = () => {
+    let hideModel = () => { 
+      clearInterval(state.timer)
       stateReset();
     };
     let state = reactive({
@@ -80,7 +81,7 @@ export default defineComponent({
   margin: auto;
   transition: 0.2s linear top;
   background: #fff;
-  box-shadow: 0.1px 1.1px 3px 1px #c5c8ce;
+  box-shadow: 0.1px 0.1px 1px 1px #c5c8ce;
   vertical-align: middle;
   font-size: 13px;
   line-height: 23px;
