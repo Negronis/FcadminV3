@@ -1,12 +1,17 @@
 import { createStore } from 'vuex'
-
+import accessModule from './access/index';
 export default createStore({
-  state: {
+  state() {
+    return {}
   },
   mutations: {
+
   },
-  actions: {
+  getters: {},
+  actions: { 
+
   },
   modules: {
+    accessModule
   }
 })
