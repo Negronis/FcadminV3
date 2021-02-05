@@ -18,7 +18,9 @@ import {
   defineComponent, 
   inject,
   computed,
-  ref
+  ref,
+  onMounted,
+  onUnmounted
 } from "vue";
 import loginFunc from "@/api/login"; 
 export default defineComponent({  
@@ -46,7 +48,6 @@ export default defineComponent({
       }
     }
     let login = () =>{ 
-      
       let msg = formCheck();
       if(msg){
         msgChild.errorMessage(msg,3)
@@ -65,6 +66,17 @@ export default defineComponent({
         msgChild.errorMessage(err || "服务器错误，请重试",1.5);
       }); 
     }
+    onMounted(()=>{
+      document.onkeydown = function(e){ 
+        let {key} = e;
+        if(key === "Enter"){
+          login();
+        }
+      }
+    })
+    onUnmounted(()=>{
+      document.onkeydown = ()=>{}
+    })
     let state = reactive({ 
       un:"",
       psw:"",
