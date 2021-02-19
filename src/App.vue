@@ -42,5 +42,7 @@ html {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   padding: 0;
   margin: 0;
+  /* color:#fff; */
+  /* background:#000; */
 }
 </style>

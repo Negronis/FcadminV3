@@ -1,5 +1,5 @@
 <template>
-  <div>我是首页</div>
+  <div>子页面的默认页</div>
 </template>
 <script>
 import {
