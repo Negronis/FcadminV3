@@ -20,5 +20,7 @@ npm run build
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 版本说明
+
+这个版本用来开发科技版后台管理系统，使用比例固定缩放技术开发。
+

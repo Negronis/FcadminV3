@@ -43,6 +43,7 @@ html {
   padding: 0;
   margin: 0;
   /* color:#fff; */
-  /* background:#000; */
-}
+  /* background:#000; */ 
+}  
+
 </style>
